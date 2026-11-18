@@ -21,7 +21,6 @@
       <h1>Memahami penggunaan data Anda.</h1>
       <p class="lead">Kebijakan ini menjelaskan bagaimana Krops Development Team memproses informasi ketika Anda menggunakan aplikasi Krops dan situs bantuan ini.</p>
       <div class="meta"><span>Terakhir diperbarui: <time datetime="2026-11-18">18 November 2026</time></span><span class="contact-line"><a href="mailto:contact@krops.tech">contact@krops.tech</a></span></div>
-      <div class="note"><p><strong>Draf untuk ditinjau.</strong> Prosedur penghapusan pada bagian 5 perlu dipastikan mencakup data yang sudah dikirim ke CloudKit sebelum kebijakan ini dipublikasikan.</p></div>
     </div>
     <div class="policy-layout">
       <nav class="toc" aria-label="Daftar isi kebijakan privasi">
@@ -78,11 +77,19 @@
         <section class="policy-section" id="penyimpanan">
           <h2>5. Penyimpanan dan penghapusan data</h2>
           <p>Draf dan preferensi tertentu disimpan pada perangkat. Pengajuan yang telah dikirim dan hasil peninjauan disimpan pada layanan CloudKit yang digunakan Krops. Data lokal juga dapat termasuk dalam cadangan perangkat sesuai pengaturan Apple Anda.</p>
-          <p>Data pengajuan dan hasil peninjauan disimpan untuk melaksanakan layanan dan menyediakan akses terhadap hasilnya. Setelah layanan selesai, Anda dapat meminta penghapusan data apabila tidak lagi membutuhkan penyimpanan atau akses terhadap hasil peninjauan. Data tersebut tidak digunakan untuk tujuan lain di luar layanan yang dijelaskan dalam kebijakan ini.</p>
-          <div class="note"><p><strong>Penghapusan di aplikasi berbeda dari penghapusan di server.</strong> Menghapus kebun dari tampilan aplikasi atau menghapus aplikasi tidak otomatis menghapus rekaman pengajuan dan hasil yang sudah tersimpan di CloudKit.</p></div>
-          <p>Untuk meminta akses, koreksi, atau penghapusan, kirim email ke <a href="mailto:contact@krops.tech?subject=Permintaan%20Data%20Krops">contact@krops.tech</a> dengan subjek “Permintaan Data Krops”. Sebutkan nama kebun, nama narahubung saat pengajuan, dan permintaan Anda.</p>
-          <!-- REVIEW BEFORE PUBLISHING: confirm the operational deletion process. Current app deletion removes submitted gardens from the in-memory list, not from CloudKit. Do not promise self-service server deletion until it is implemented and verified. -->
-          <p>Tim Krops menindaklanjuti permintaan penghapusan secara manual setelah memverifikasi bahwa permintaan berasal dari pihak yang berhak. Kami dapat meminta informasi tambahan yang diperlukan untuk menemukan rekaman dan memverifikasi permintaan. Kami akan memberi tahu Anda ketika permintaan selesai ditangani atau jika ada informasi lebih lanjut yang diperlukan.</p>
+          <p>Data pengajuan dan hasil peninjauan disimpan untuk melaksanakan layanan dan menyediakan akses terhadap hasilnya, hingga Anda meminta penghapusan melalui tim Krops. Data ini tidak dihapus secara otomatis setelah layanan selesai dan tidak digunakan untuk tujuan lain di luar layanan yang dijelaskan dalam kebijakan ini.</p>
+          <h3>Penghapusan pada versi aplikasi saat ini</h3>
+          <p>Fitur Hapus Kebun dapat menghapus draf yang tersimpan pada perangkat atau menghilangkan kebun yang sudah diajukan dari daftar yang sedang ditampilkan. Fitur ini belum menghapus data pengajuan dan hasil peninjauan yang tersimpan di CloudKit. Data yang masih tersimpan di CloudKit dapat muncul kembali ketika aplikasi memuat ulang data.</p>
+          <p>Menghapus aplikasi dari perangkat juga tidak menghapus data pengajuan dan hasil peninjauan yang sudah dikirim ke CloudKit.</p>
+          <h3>Meminta penghapusan data yang sudah dikirim</h3>
+          <div class="note"><p>Kirim email ke <a href="mailto:contact@krops.tech?subject=Permintaan%20Penghapusan%20Data%20Krops">contact@krops.tech</a> dengan subjek <strong>Permintaan Penghapusan Data Krops</strong>. Penghapusan data di CloudKit ditangani secara manual oleh Krops Development Team.</p></div>
+          <ol>
+            <li>Sebutkan nama kebun, nama narahubung yang digunakan saat pengajuan, dan data yang ingin dihapus.</li>
+            <li>Tim Krops memverifikasi bahwa permintaan berasal dari pihak yang berhak. Kami dapat meminta informasi tambahan yang diperlukan untuk menemukan rekaman dan memverifikasi permintaan.</li>
+            <li>Setelah verifikasi, tim menghapus data pengajuan dan hasil peninjauan terkait dari layanan CloudKit yang digunakan Krops, lalu mengirimkan konfirmasi melalui email.</li>
+          </ol>
+          <p>Anda dapat mengirim permintaan ini termasuk setelah layanan selesai. Penghapusan dapat menghentikan proses peninjauan yang masih berjalan dan menghilangkan akses terhadap hasil peninjauan yang dihapus.</p>
+          <p>Untuk meminta akses atau koreksi data, atau untuk menanyakan status permintaan penghapusan, hubungi <a href="mailto:contact@krops.tech?subject=Permintaan%20Data%20Krops">contact@krops.tech</a>.</p>
         </section>
         <section class="policy-section" id="pilihan">
           <h2>6. Pilihan Anda</h2>

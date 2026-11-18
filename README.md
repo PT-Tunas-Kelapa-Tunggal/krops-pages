@@ -15,11 +15,25 @@ No framework, package installation, JavaScript, backend or build step is require
 
 ## Before publishing
 
-- The policy reflects the team's stated practice: process only service-related data, do not sell data, and allow deletion after the service. Review section 5 before publication: the current app does not delete CloudKit records through its garden-delete action, so self-service server deletion must be implemented and verified before it is promised. Confirm the manual request process or update it to the verified self-service flow, then remove the draft notice and the remaining `REVIEW BEFORE PUBLISHING` comment.
+- The policy describes the current release and an email-based deletion process. No self-service CloudKit deletion feature or future release date is promised. Krops Development Team must monitor contact@krops.tech and actually fulfill verified deletion requests manually.
 - Confirm that the policy describes the actual released app and the team's operational practices, including CloudKit access and sharing with assessment staff.
 - Confirm that contact@krops.tech is monitored for support, correction and deletion requests.
-- The current app does not delete submitted CloudKit records when a garden is removed from the app. Handle verified server-data deletion requests through the team's confirmed process.
+- The current app does not delete submitted CloudKit records when a garden is removed from the app. The public pages explain this limitation and route server-data deletion to the team.
 - Recheck the date on the policy when publishing or changing its substance.
+
+## Manual deletion workflow for the team
+
+The public pages describe this process as available now. It does not require adding an app feature, but it requires the team to perform the work when requested.
+
+1. Monitor **contact@krops.tech** for **Permintaan Penghapusan Data Krops** requests.
+2. Identify the garden/submission using the details already held by Krops and verify that the requester is entitled to the data. Request only additional information needed for verification.
+3. In CloudKit Console, choose the Krops container and the environment used by the requester. The shipped app uses **Production**. Find the correct submission; current contract records use the garden UUID as the record name under **PlantationScanRequest**. Check for matching legacy records when applicable.
+4. Delete the verified request and related assessment data/assets. Check any separate copies retained by the assessment workflow; do not report complete deletion while related service copies remain accessible.
+5. Confirm completion through email and explain that the deleted results will no longer be available. Keep any necessary request-handling record limited to what is needed for that purpose, and update the policy if the team introduces a separate retention requirement.
+
+This website only provides instructions and a mailto link. It does not execute CloudKit deletions, send emails automatically, or add an in-app feature. No response deadline is promised in the public copy.
+
+If Krops later adds its own account-creation flow, reassess Apple's separate in-app account-deletion requirement; this manual garden-data process is not a substitute for that requirement where it applies. See [Apple's account deletion guidance](https://developer.apple.com/support/offering-account-deletion-in-your-app/).
 
 ## App Store privacy declaration
 
