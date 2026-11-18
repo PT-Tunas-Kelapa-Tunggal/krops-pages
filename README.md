@@ -15,11 +15,15 @@ No framework, package installation, JavaScript, backend or build step is require
 
 ## Before publishing
 
-- Review section 5 in `privacy/index.html`: the proposed policy retains submissions until a verified deletion request and has the team handle CloudKit deletion manually. These operational terms have not been confirmed. Edit them to match the team's process, then remove the visible draft notice and the two `REVIEW BEFORE PUBLISHING` comments.
+- The policy reflects the team's stated practice: process only service-related data, do not sell data, and allow deletion after the service. Review section 5 before publication: the current app does not delete CloudKit records through its garden-delete action, so self-service server deletion must be implemented and verified before it is promised. Confirm the manual request process or update it to the verified self-service flow, then remove the draft notice and the remaining `REVIEW BEFORE PUBLISHING` comment.
 - Confirm that the policy describes the actual released app and the team's operational practices, including CloudKit access and sharing with assessment staff.
 - Confirm that contact@krops.tech is monitored for support, correction and deletion requests.
 - The current app does not delete submitted CloudKit records when a garden is removed from the app. Handle verified server-data deletion requests through the team's confirmed process.
 - Recheck the date on the policy when publishing or changing its substance.
+
+## App Store privacy declaration
+
+Service-only use, no data sale, and deletion after the service do not make stored CloudKit submissions “Data Not Collected” under Apple's definition. Declare the data actually transmitted and retained for the assessment under **App Functionality**, and answer tracking questions according to the app's actual practices. Contact details and precise farm coordinates are included in the current submission payload. Data processed only on-device can be assessed separately. See [Apple's data-collection guidance](https://developer.apple.com/app-store/app-privacy-details/).
 
 ## Publish with GitHub Pages
 

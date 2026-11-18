@@ -21,7 +21,7 @@
       <h1>Memahami penggunaan data Anda.</h1>
       <p class="lead">Kebijakan ini menjelaskan bagaimana Krops Development Team memproses informasi ketika Anda menggunakan aplikasi Krops dan situs bantuan ini.</p>
       <div class="meta"><span>Terakhir diperbarui: <time datetime="2026-11-18">18 November 2026</time></span><span class="contact-line"><a href="mailto:contact@krops.tech">contact@krops.tech</a></span></div>
-      <div class="note"><p><strong>Draf untuk ditinjau.</strong> Ketentuan penyimpanan dan penghapusan pada bagian 5 merupakan usulan yang perlu dikonfirmasi oleh Krops Development Team sebelum kebijakan ini dipublikasikan.</p></div>
+      <div class="note"><p><strong>Draf untuk ditinjau.</strong> Prosedur penghapusan pada bagian 5 perlu dipastikan mencakup data yang sudah dikirim ke CloudKit sebelum kebijakan ini dipublikasikan.</p></div>
     </div>
     <div class="policy-layout">
       <nav class="toc" aria-label="Daftar isi kebijakan privasi">
@@ -57,6 +57,7 @@
         </section>
         <section class="policy-section" id="tujuan">
           <h2>3. Tujuan penggunaan data</h2>
+          <p>Kami hanya meminta dan memproses informasi yang diperlukan untuk menyediakan fitur aplikasi dan layanan peninjauan kebun yang Anda pilih. Kami tidak meminta atau menggunakan data di luar kebutuhan layanan tersebut.</p>
           <ul>
             <li>Menyimpan dan menampilkan informasi serta draf kebun yang Anda masukkan.</li>
             <li>Mengirim dan memproses permintaan peninjauan kebun.</li>
@@ -65,23 +66,22 @@
             <li>Menyimpan preferensi yang Anda pilih di aplikasi.</li>
             <li>Menanggapi pertanyaan bantuan serta permintaan koreksi dan penghapusan data.</li>
           </ul>
-          <p>Aplikasi saat ini tidak menyertakan SDK iklan atau analitik pihak ketiga. Kami tidak menggunakan data kebun untuk penargetan iklan di aplikasi.</p>
+          <p><strong>Kami tidak menjual data pribadi Anda.</strong> Kami tidak menggunakan data kebun atau narahubung untuk iklan, pemasaran, atau pelacakan lintas aplikasi dan situs web. Aplikasi saat ini tidak menyertakan SDK iklan atau analitik pihak ketiga.</p>
         </section>
         <section class="policy-section" id="layanan">
           <h2>4. Layanan dan pembagian data</h2>
           <p><strong>Apple CloudKit.</strong> Ketika Anda mengirim pengajuan, data kebun, narahubung, dan informasi pengajuan dikirim ke infrastruktur CloudKit Apple yang digunakan Krops. Tim Krops dan petugas yang menangani peninjauan menggunakan informasi yang diperlukan untuk memproses pengajuan dan menyiapkan hasil. Data ini tidak hanya disimpan secara lokal pada perangkat Anda.</p>
           <p><strong>Peta, lokasi, Foto dan iCloud.</strong> Krops menggunakan layanan Apple untuk peta, pencarian lokasi, izin lokasi, akses foto, dan penyimpanan cloud. Pengiriman data ke CloudKit memerlukan akun iCloud aktif. Informasi yang diproses Apple melalui layanan tersebut juga tunduk pada <a href="https://www.apple.com/legal/privacy/">Kebijakan Privasi Apple</a>.</p>
           <p><strong>Email bantuan.</strong> Jika Anda menghubungi kami, pesan diproses melalui layanan email yang digunakan untuk alamat contact@krops.tech. Sertakan hanya informasi yang diperlukan untuk menangani pertanyaan atau permintaan Anda.</p>
-          <p>Kami menggunakan informasi narahubung dan kebun untuk tujuan layanan yang dijelaskan di atas.</p>
+          <p>Penggunaan dan pembagian informasi kebun serta narahubung dibatasi pada kebutuhan layanan yang dijelaskan di atas, termasuk petugas peninjauan dan penyedia infrastruktur yang mendukung layanan tersebut.</p>
         </section>
         <section class="policy-section" id="penyimpanan">
           <h2>5. Penyimpanan dan penghapusan data</h2>
           <p>Draf dan preferensi tertentu disimpan pada perangkat. Pengajuan yang telah dikirim dan hasil peninjauan disimpan pada layanan CloudKit yang digunakan Krops. Data lokal juga dapat termasuk dalam cadangan perangkat sesuai pengaturan Apple Anda.</p>
-          <!-- REVIEW BEFORE PUBLISHING: confirm the proposed retention policy with Krops Development Team. -->
-          <p>Data pengajuan dan hasil peninjauan disimpan untuk memproses peninjauan dan menyediakan akses terhadap hasilnya, sampai Anda meminta penghapusan melalui tim Krops.</p>
+          <p>Data pengajuan dan hasil peninjauan disimpan untuk melaksanakan layanan dan menyediakan akses terhadap hasilnya. Setelah layanan selesai, Anda dapat meminta penghapusan data apabila tidak lagi membutuhkan penyimpanan atau akses terhadap hasil peninjauan. Data tersebut tidak digunakan untuk tujuan lain di luar layanan yang dijelaskan dalam kebijakan ini.</p>
           <div class="note"><p><strong>Penghapusan di aplikasi berbeda dari penghapusan di server.</strong> Menghapus kebun dari tampilan aplikasi atau menghapus aplikasi tidak otomatis menghapus rekaman pengajuan dan hasil yang sudah tersimpan di CloudKit.</p></div>
           <p>Untuk meminta akses, koreksi, atau penghapusan, kirim email ke <a href="mailto:contact@krops.tech?subject=Permintaan%20Data%20Krops">contact@krops.tech</a> dengan subjek “Permintaan Data Krops”. Sebutkan nama kebun, nama narahubung saat pengajuan, dan permintaan Anda.</p>
-          <!-- REVIEW BEFORE PUBLISHING: confirm that the team will handle verified CloudKit deletion requests manually. -->
+          <!-- REVIEW BEFORE PUBLISHING: confirm the operational deletion process. Current app deletion removes submitted gardens from the in-memory list, not from CloudKit. Do not promise self-service server deletion until it is implemented and verified. -->
           <p>Tim Krops menindaklanjuti permintaan penghapusan secara manual setelah memverifikasi bahwa permintaan berasal dari pihak yang berhak. Kami dapat meminta informasi tambahan yang diperlukan untuk menemukan rekaman dan memverifikasi permintaan. Kami akan memberi tahu Anda ketika permintaan selesai ditangani atau jika ada informasi lebih lanjut yang diperlukan.</p>
         </section>
         <section class="policy-section" id="pilihan">
